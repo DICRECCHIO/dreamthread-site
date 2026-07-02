@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DREAM THREAD | AAA GAME DEVELOPMENT × AI-DRIVEN WORKFLOWS</title>
+<meta name="description" content="DREAM THREADは、最先端のAI技術とゲームエンジンを融合させ、これまでにない深い没入感を生み出すクリエイティブスタジオです。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Signature thread line that runs the length of the page -->
+<div class="thread-rail" aria-hidden="true">
+  <svg class="thread-svg" viewBox="0 0 2 1000" preserveAspectRatio="none">
+    <path id="threadPath" d="M1,0 L1,1000" />
+  </svg>
+  <div class="thread-glow" id="threadGlow"></div>
+</div>
+
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="#top" class="brand">
+      <span class="brand-mark">DT</span>
+      <span class="brand-name">DREAM THREAD</span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="#top">TOP</a>
+      <a href="#company">Company</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#research">RESEARCH AND LEARNING</a>
+      <a href="#contact">Contact</a>
+      <a href="#recruit">Recruit</a>
+      <a href="#blog">Blog</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="メニューを開く">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <img src="images/hero-artwork.png" alt="" class="hero-artwork">
+      <div class="hero-artwork-fade"></div>
+    </div>
+    <div class="hero-inner">
+      <p class="eyebrow mono">ARCHITECT OF ENTERTAINMENT</p>
+      <h1 class="hero-title">AAA GAME DEVELOPMENT<br><span class="cross">×</span> AI-DRIVEN WORKFLOWS</h1>
+      <p class="hero-jp">AAAゲーム開発と AI駆動開発で<br>世界水準の没入体験を設計するスタジオ</p>
+      <div class="hero-cta">
+        <a href="#recruit" class="btn btn-primary">採用情報</a>
+        <a href="#contact" class="btn btn-ghost">お問い合わせ</a>
+      </div>
+    </div>
+    <div class="scroll-hint mono" aria-hidden="true">SCROLL</div>
+  </section>
+
+  <!-- LATEST UPDATES -->
+  <section class="section updates" id="blog">
+    <div class="section-inner">
+      <p class="eyebrow mono">Latest Updates</p>
+      <h2 class="section-title">最新ニュース</h2>
+      <ul class="update-list">
+        <li class="update-item">
+          <span class="update-date mono">2024.03.15</span>
+          <span class="update-tag">MEDIA</span>
+          <p class="update-text">「東京カイシャハッケン伝！」に弊社のインタビュー記事が掲載されました。</p>
+        </li>
+        <li class="update-item">
+          <span class="update-date mono">2024.03.01</span>
+          <span class="update-tag">PROJECT</span>
+          <p class="update-text">Unreal Engine 5を活用した次世代メタバース基盤の共同開発を開始。</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PROJECT GALLERY -->
+  <section class="section gallery" id="portfolio">
+    <div class="section-inner">
+      <p class="eyebrow mono">Project Gallery</p>
+      <h2 class="section-title">Portfolio</h2>
+    </div>
+    <div class="gallery-track-wrap">
+      <button class="gallery-nav prev" id="galPrev" aria-label="前へ">‹</button>
+      <div class="gallery-track" id="galleryTrack">
+
+        <article class="gallery-card has-image">
+          <img src="images/gallery-01-oedo.png" alt="大江戸でべろっぱ" class="gallery-img">
+          <div class="gallery-card-body">
+            <div class="gallery-index mono">01 / 05</div>
+            <h3>大江戸でべろっぱ</h3>
+            <p>2026年初頭アーリーアクセス版をリリース予定！</p>
+          </div>
+        </article>
+
+        <article class="gallery-card has-image">
+          <img src="images/gallery-02-onepiece.png" alt="ONE PIECE ODYSSEY" class="gallery-img">
+          <div class="gallery-card-body">
+            <div class="gallery-index mono">02 / 05</div>
+            <h3>ONE PIECE ODYSSEY（ワンピース オデッセイ）</h3>
+            <p>株式会社バンダイナムコエンターテインメント<br>
+            <span class="fine-print">©尾田栄一郎/集英社・フジテレビ・東映アニメーション ©Bandai Namco Entertainment Inc.</span></p>
+          </div>
+        </article>
+
+        <article class="gallery-card has-image">
+          <img src="images/gallery-03-script.png" alt="脚本自動清書システム" class="gallery-img">
+          <div class="gallery-card-body">
+            <div class="gallery-index mono">03 / 05</div>
+            <h3>脚本自動清書システム</h3>
+            <p>横書きテキストから脚本書式に変換したデータを作成</p>
+          </div>
+        </article>
+
+        <article class="gallery-card has-image">
+          <img src="images/gallery-04-rpg-nda.png" alt="PlayStation4用ロールプレイングゲーム" class="gallery-img">
+          <div class="gallery-card-body">
+            <div class="gallery-index mono">04 / 05</div>
+            <h3>PlayStation®4用 ロールプレイングゲーム</h3>
+            <p>（「Unreal Engine 4」使用タイトル 非公開）<br>・レベルデザイン業務</p>
+          </div>
+        </article>
+
+        <article class="gallery-card has-image">
+          <img src="images/gallery-05-ai-guide.jpg" alt="AI技術を活用した案内システム" class="gallery-img">
+          <div class="gallery-card-body">
+            <div class="gallery-index mono">05 / 05</div>
+            <h3>AI技術を活用した案内システム</h3>
+            <p>・仕様/UIデザイン/UX設計等</p>
+          </div>
+        </article>
+
+      </div>
+      <button class="gallery-nav next" id="galNext" aria-label="次へ">›</button>
+    </div>
+  </section>
+
+  <!-- SOLUTIONS / SERVICES -->
+  <section class="section solutions" id="services">
+    <div class="section-inner">
+      <p class="eyebrow mono">Solutions</p>
+      <h2 class="section-title">AAA開発で培った技術力を、ゲームからデジタルツイン・AI・クラウドまで幅広く展開します。</h2>
+
+      <div class="solutions-grid">
+        <div class="solution-card">
+          <span class="solution-code mono">UE5</span>
+          <h3>GAME<br>Unreal Engine 5 ゲーム開発</h3>
+          <p>最新鋭のUE5を駆使し、フォトリアルなグラフィックと高度なゲームプレイを統合したAAAタイトルを開発します。</p>
+        </div>
+        <div class="solution-card">
+          <span class="solution-code mono">2D</span>
+          <h3>2D &amp; ART<br>2Dゲーム＆イラスト</h3>
+          <p>独創的なアートワークと2Dアニメーション。世界観を深めるキャラクターデザインや背景制作をトータルに支援。</p>
+        </div>
+        <div class="solution-card">
+          <span class="solution-code mono">DT</span>
+          <h3>DIGITAL TWIN<br>デジタルツイン</h3>
+          <p>現実空間を高精度にデジタル化。ゲームエンジンのリアルタイム描画を産業用シミュレーションに転用します。</p>
+        </div>
+        <div class="solution-card">
+          <span class="solution-code mono">AI</span>
+          <h3>AI<br>AI駆動開発・導入</h3>
+          <p>生成AIを活用した開発ワークフローの最適化と、エージェントAIのゲーム内実装・外部連携を支援。</p>
+        </div>
+        <div class="solution-card">
+          <span class="solution-code mono">CL</span>
+          <h3>CLOUD<br>クラウド開発・運用</h3>
+          <p>サーバーレスアーキテクチャや分散システム。拡張性と安定性を両立したクラウド基盤を構築・運用。</p>
+        </div>
+        <div class="solution-card">
+          <span class="solution-code mono">VP</span>
+          <h3>VP &amp; VIDEO<br>バーチャル制作・映像</h3>
+          <p>バーチャルプロダクション、インゲームシネマティクス制作。最高品質の映像コンテンツを提供。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track mono">
+      <span>UNREAL ENGINE 5 • ARTIFICIAL INTELLIGENCE • DIGITAL TWIN • CLOUD SOLUTIONS • VIRTUAL PRODUCTION • GAME ART • </span>
+      <span>UNREAL ENGINE 5 • ARTIFICIAL INTELLIGENCE • DIGITAL TWIN • CLOUD SOLUTIONS • VIRTUAL PRODUCTION • GAME ART • </span>
+    </div>
+  </div>
+
+  <!-- ABOUT / COMPANY -->
+  <section class="section about" id="company">
+    <div class="section-inner about-inner">
+      <h2 class="about-title">夢を織り成し<br>未来の没入体験を設計する</h2>
+      <p class="about-text">DREAM THREADは、最先端のAI技術とゲームエンジンを融合させ、これまでにない深い没入感を生み出すクリエイティブスタジオです。私たちは技術の限界に挑戦し、デジタルエンターテインメントの新しいスタンダードを構築します。</p>
+    </div>
+  </section>
+
+  <!-- RESEARCH AND LEARNING (referenced in nav) -->
+  <section class="section research" id="research">
+    <div class="section-inner">
+      <p class="eyebrow mono">Research and Learning</p>
+      <h2 class="section-title">技術と表現を、学び続ける。</h2>
+      <p class="research-text">UE5・生成AI・クラウドといった急速に進化する技術領域を継続的に検証し、実プロジェクトへ還元しています。詳しい取り組み内容は随時Blogでも発信予定です。</p>
+    </div>
+  </section>
+
+  <!-- PARTNER / CONTACT CTA -->
+  <section class="section partner" id="recruit">
+    <div class="section-inner partner-inner">
+      <h2 class="partner-title">Partner with Us</h2>
+      <p class="partner-text">最新のAIやゲーム開発を軸に、次世代の体験を共に革新するビジネスパートナーを募集しています。クリエイターや企業の皆様と、戦略的な共同開発や新たな価値の創出を実現できる日を楽しみにしています。</p>
+      <a href="#contact" class="btn btn-primary btn-large">CONTACT DREAM THREAD</a>
+      <p class="partner-sub">ゲーム×AIで没入体験を設計するスタジオ</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="section-inner contact-inner">
+      <p class="eyebrow mono">Contact</p>
+      <h2 class="section-title">お問い合わせ</h2>
+      <p class="contact-text">事業提携・お仕事のご相談、採用に関するお問い合わせはこちらから承っております。</p>
+      <form class="contact-form" onsubmit="event.preventDefault(); alert('送信内容はサンプルフォームです。実際の送信設定を行ってください。');">
+        <div class="form-row">
+          <label>お名前
+            <input type="text" name="name" required>
+          </label>
+          <label>会社名
+            <input type="text" name="company">
+          </label>
+        </div>
+        <label>メールアドレス
+          <input type="email" name="email" required>
+        </label>
+        <label>お問い合わせ内容
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button type="submit" class="btn btn-primary">送信する</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="brand-mark">DT</span>
+      <span class="brand-name">DREAM THREAD</span>
+      <p>ゲーム×AIで没入体験を設計するスタジオ</p>
+    </div>
+    <nav class="footer-nav">
+      <a href="#top">TOP</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#company">Company</a>
+      <a href="#recruit">Recruit</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="footer-legal mono">
+      <span>© 2026 DREAM THREAD All rights reserved.</span>
+      <a href="#">Privacy Policy</a> / <a href="#">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
